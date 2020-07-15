@@ -23,4 +23,9 @@ def studentLogin():
     if request.method == 'GET':
         return render_template('studentLogin.html', title='Student')
 
+@app.route('/admin', methods=['GET', 'POST'])
+def adminLogin():
+    if request.method == 'GET':
+        return render_template('adminLogin.html', title='Student')
+
 
